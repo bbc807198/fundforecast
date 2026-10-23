@@ -33,13 +33,6 @@ python main.py --smoke
 ```
 
 产物都在 `outputs/`：
-
-> 💡 **VS Code 调试**：`.vscode/launch.json` 里已经配好 6 个调试方案
-> （完整流程 / 只预测 / 只回测 / 冒烟 / 数据探索 / 调参）。打开项目后按 `F5`，
-> 在左上角下拉框里选一个就能直接单步调试，不用自己拼命令行参数。
-> 断点建议打在：`src/data_prep.py::prepare`（看特征是否合理）、
-> `src/pipeline.py::train_target`（看样本切分）、`src/metrics.py::regression_metrics`（看指标）。
-
 | 文件 | 内容 |
 |---|---|
 | `forecast_2014-09_daily.csv` | 9 月逐日预测（预测值 / ratio / 水平 / 80% 区间 / 基线参考） |
