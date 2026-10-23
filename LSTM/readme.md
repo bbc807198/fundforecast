@@ -283,7 +283,7 @@ python main.py --task backtest --seed 3 --ensemble 1 --no-plot
 | ★★☆ | `loss` | `huber` / `mse` | `huber` | 单日异常值多时 huber 更稳，实测两个目标一致更好 |
 | ★☆☆ | `lr` | 1e-3 / 3e-3 / 5e-3 / 1e-2 | 5e-3 | 配合 cosine 衰减 |
 | ★☆☆ | `batch_size` | 8 / 16 / 32 | 16 | 小数据下 16 左右合适 |
-| ★☆☆ | `epochs` / `patience` | 200~500 / 40~80 | 400 / 60 | 有早停，epochs 给大点没关系 |
+| ★☆☆ | `epochs` / `patience` | 200-500 / 40-80 | 400 / 60 | 有早停，epochs 给大点没关系 |
 | ★☆☆ | `input_noise` | 0 / 0.01 / 0.02 | 0 | 轻微加噪有时能提 0.5~1pp |
 | ★☆☆ | `sample_decay` | 1.0 / 0.999 | 1.0 | 制度切换期可试 |
 | ☆☆☆ | `layers` | 1 / 2 | 1 | 2 层要配 0.2 dropout，通常无收益 |
