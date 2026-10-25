@@ -39,19 +39,10 @@
 ## 四、仓库结构
 
 ```
-fund-flow-forecast/
 ├── README.md                  # 本文件（项目总览）
-├── data/
-│   └── daily_series.csv       # 原始数据（report_date, purchase, redeem）
-├── sarima/                    # SARIMA 统计路线（step1~step6 全流程脚本 + 图表 + 完整报告）
-│   ├── python代码/             # 描述统计/平稳性/定阶/估计/诊断/回测/预测，逐步可复现
-│   ├── analysis/              # 中间产物：定阶表、诊断表、回测表、13 张分析图
-│   └── output/                # 完整建模报告（docx / html）
+├── data/                      # 原始数据
+├── sarima/                    # SARIMA 统计路线
 └── lstm/                      # LSTM 深度学习路线
-    ├── src/                   # 数据/模型/训练/回测/基线/指标模块化代码
-    ├── outputs/               # 预测、回测、调参、图表等全部产物
-    ├── README.md              # 使用说明（怎么跑、怎么判断模型好坏）
-    └── MODEL_EXPLANATION.md   # 模型原理详解（架构/防泄漏/5折/显著性检验，汇报答辩向）
 ```
 
 ## 五、快速开始
