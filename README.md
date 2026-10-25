@@ -57,7 +57,6 @@ python main.py --task all       # 完整流程：先 5 折滚动回测，再出 
 # ---------- SARIMA 路线 ----------
 cd sarima
 python python代码/step1_descriptive.py   # 依次执行 step1 ~ step6，复现全流程
-# 或直接阅读 output/ 目录下的完整建模报告（docx）
 ```
 
 ## 六、核心结论（TL;DR）
